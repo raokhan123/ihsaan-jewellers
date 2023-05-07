@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Home</title>
+
+  <link rel="stylesheet" href="main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+
+.about:hover {
+  text-decoration:underline;
+}
+
+.products:hover {
+  text-decoration:underline;
+}
+
+.home:hover {
+  text-decoration:underline;
+}
+
+.images {
+  padding-left: 100px;
+  padding-top: 150px;
+
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.firstbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 470px;
+    justify-content: center;
+    background-attachment: inherit;
+    object-position: center;
+    padding-bottom: 20px;
+    margin-top: -20px;
+}
+
+.firstbox {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.account {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.account {
+    margin-bottom: 21px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.item {
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-weight: 550px;
+    background-attachment: inherit;
+    object-fit: contain;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    vertical-align: top;
+    padding-top: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-weight: 550;
+    color: rgb(130, 130, 130);
+    object-position: center;
+}
+
+.button {
+    vertical-align: top;
+    display: inline;
+    margin-top: 9px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.firstbox-t {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 470px;
+    justify-content: center;
+    background-attachment: inherit;
+    object-position: center;
+    padding-bottom: 20px;
+    margin-top: -20px;
+}
+
+.firstbox-t {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.account-t {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.account-t {
+    margin-bottom: 21px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.item-t {
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-weight: 550px;
+    background-attachment: inherit;
+    object-fit: contain;
+}
+
+.price-t {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    vertical-align: top;
+    padding-top: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-weight: 550;
+    color: rgb(130, 130, 130);
+    object-position: center;
+}
+
+.button-t {
+    vertical-align: top;
+    display: inline;
+    margin-top: 9px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+.header {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+        align-items: center;
+        margin-bottom: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .left {
+        display: flex;
+
+        width: 80px;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: -40px;
+
+
+      }
+
+      .middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between ;
+        margin-left: 80px;
+        margin-right: 40px;
+       
+
+      }
+
+      .right {
+        display: flex;
+
+        width: 200px;
+        align-items: center;
+        justify-content: space-between;
+
+      }
+
+      .lofo {
+        margin-top: 60px;
+        width: 100px;
+        cursor: pointer;
+        margin-bottom: 55px;
+        transition: 0.1s;
+        margin-left: 20px;
+      }
+
+      .lines {
+        width:50px;
+        cursor: pointer;
+        transition: 0.1s;
+      }
+
+      .cart {
+        height:50px;
+        margin-left: 115px;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+
+
+      }
+
+
+      .lines:hover {
+        opacity: 0.7;
+      }
+
+
+      .lofo:hover {
+        opacity: 0.7;
+      }
+
+      .cart:hover {
+        opacity: 0.7;
+
+
+      }
+
+
+    
+    
+
+    .bottom-bar {
+      display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-between;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: white;
+
+
+    }
+
+    .right-bottom {
+      display: flex;
+
+        width: 200px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 60px;
+        
+
+    }
+
+    .middle-bottom {
+
+    }
+
+    .left-bottom {
+
+      margin-left: 40px;
+      display: flex;
+
+        width: 80px;
+        align-items: center;
+        
+
+
+    }
+
+    .tiktok {
+      width:45px;
+      margin-right: 20px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    .insta{
+      margin-left: 80px;
+      cursor: pointer;
+
+    }
+
+    .tiktok:hover {
+      opacity: 0.7;
+
+
+    }
+
+    .insta:hover {
+      opacity: 0.7;
+
+
+    }
+
+    .buy-pic {
+      width: 450px;
+      padding-left: -20px;
+
+
+    }
+    .buy-pics {
+      width: 450px;
+      padding-left: -20px;
+      padding-bottom: 200px;
+
+
+    }
+
+    .boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.button-buy {
+    vertical-align: top;
+    display: inline;
+    margin-top: -3px;
+    height: 50px;
+    width: 80px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.titlehoodie {
+  font-size: 25px;
+  margin-right: 50px;
+  
+}
+
+.mid-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-left: 200px;
+    
+
+    }
+
+
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+
+<body style="background-color: antiquewhite; padding-bottom: 200px;">
+
+  
+  <div class="privacy-title" style="
+  display: flex;
+  align-items: center;
+  padding-top: 200px;
+  justify-content: center;
+">
+
+
+<p><strong class="titlehoodie"> IHSAAN BLACK RING </strong><pr><br> <pr style=" margin-left: 10px;
+margin-top: 45px; font-size: 25px;"> <a href="images/Ihsaan paper ring sizer.pdf" download> [find your size!]</a> &nbsp &nbsp &nbsp £5</pr>
+<br><br>
+
+
+
+
+  
+</div>
+
+<div class="middle-priv" style="
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 70px;
+">
+ <div>
+  <div>
+    <a href=""><button class="button-buy">6</button></a>
+    <a href=""><button class="button-buy">7</button></a>
+    <a href=""><button class="button-buy">8</button></a>
+    <a href=""><button class="button-buy">9</button></a>
+    <a href=""><button class="button-buy">10</button></a>
+
+</div>
+  
+  <div class="boxes">
+    <img class= "buy-pic" src="images/bltho.jpeg">
+    <img class= "buy-pic" src="images/black.jpeg">
+    <img class= "buy-pic" src="images/leng.jpeg">
+    
+  
+    
+  
+  </div>
+</p>
+
+
+
+
+
+</div>
+
+  
+
+  
+
+
+
+
+
+
+
+  <div class="header">
+    <ul class="left-sec" >
+      <li class="products" style="list-style: none; font-weight: 600;"> <a href="contacts.html" style="text-decoration:none; color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">CONTACTS</a></li> &nbsp &nbsp
+      <li class="about" style="list-style: none; font-weight: 600;"> <a href="about.html" style="text-decoration:none; color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">ABOUT</a></li> 
+    
+    </ul>
+    <div class="mid-sec" style="margin-top: 10px; margin-left: -170px;"><a href="main.html"><img src="images/logoArtboard 1.png"></a>
+    </div>
+    <div class="right-sec" style="margin-right: -30px;"><a href="https://www.instagram.com/ihsaan_jewellers/"><img src="images/instaArtboard 1.png"></a>  &nbsp <a href="https://www.tiktok.com/@_.ihsaan._"><img src="images/tiktokArtboard 1.png"></a>
+      
+  
+
+
+  </div>
+
+  <div class="bottom">
+    <ul class="left-sec" style="margin-right: 100px; left: 0; right: 0; margin-left: 135px;  " >
+     <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr> &nbsp Ihsaan LTD. &nbsp<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    </ul>
+
+    <ul class="right-sec" style="margin-right: 130px; left: 0; right: 0; margin-left: 70px;  " > DM US FOR ANY INQUIRIES!
+      
+     </ul>
+   
+    
+    
+      
+  
+
+
+  </div>
+
+  
+
+
+</body>
+
+
+
+
+
+
+</html>
